@@ -28,7 +28,7 @@ const getSum = () => {
     totalCell.style.fontWeight = "bold";
     totalCell.style.textAlign = "center";
     totalCell.id = "ans";  // ✅ Added id="ans" for Cypress test
-    totalCell.textContent = Total Price: Rs `${total}`;
+    totalCell.textContent = `Total Price: Rs ${total}`;
 
     // Append cell to row and row to table
     newRow.appendChild(totalCell);
